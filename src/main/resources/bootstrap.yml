@@ -1,0 +1,34 @@
+management:
+  context-path: /admin
+  security:
+    enabled: false
+#  security:
+#    basic:
+#      enabled: true
+#    server:
+#      name: admin
+#      password: admin
+
+info:
+  build:
+    groupId: '@project.groupId@'
+    artifactId: '@project.artifactId@'
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+    buildTime: '@maven.build.timestamp@'
+
+spring:
+  main:
+    banner-mode: "off"
+  application:
+    name: EurekaServer
+    index: ${random.value}
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true

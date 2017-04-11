@@ -1,0 +1,16 @@
+server:
+    port: 8761
+
+#//log
+log.spring.rabbitmq:
+  host: 192.168.99.100
+  port: 5672
+  username: guest
+  password: guest
+
+#//sleuth
+spring.rabbitmq:
+  host: 192.168.99.100
+  port: 5672
+  username: guest
+  password: guest
